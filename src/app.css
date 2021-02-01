@@ -1,10 +1,23 @@
+html,
 body {
   background-color: #f4f8fa;
+  margin: 0;
+  padding: 0;
 }
 
 i {
   display: inline;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*login UI*/
 .material-icons.md-48 {
   font-size: 48px;
 }
@@ -75,4 +88,228 @@ i {
 
 .google-login {
   margin-top: 1rem;
+}
+
+/*Home UI*/
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*header*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+}
+
+.header h1 {
+  flex-grow: 1;
+  margin: 0;
+  line-height: 95px;
+  padding-left: 2rem;
+  color: rgb(88, 132, 252);
+}
+
+.header span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 0;
+}
+
+.header .sign-out {
+  color: #b5b5b5;
+  margin-top: 2.5rem;
+}
+
+.header .sign-out:hover {
+  color: #202020;
+  cursor: pointer;
+}
+
+.header .add-card {
+  display: inline-block;
+  width: 195px;
+  height: 60px;
+  background-color: rgb(88, 132, 252);
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+  margin-right: 3rem;
+  border-radius: 10rem;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.header .add-card:hover {
+  cursor: pointer;
+}
+
+/*card section*/
+.card-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-section .card-zone {
+  width: 900px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+}
+
+.card-section .card-zone:first-child {
+  margin-top: 10rem;
+}
+
+/*namecard part*/
+.name-card-zone {
+  padding-left: 3rem;
+  width: 50%;
+}
+
+.name-card-zone h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(88, 132, 252);
+  padding-top: 4rem;
+}
+
+.name-card-zone .name-card {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.name-card-zone .name-card .face-zone {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.name-card-zone .name-card .face-zone .face {
+  width: 125px;
+  height: 125px;
+  border-radius: 10rem;
+  background-color: rgb(88, 132, 252);
+  margin-top: 1.5rem;
+  margin-left: 2.3rem;
+}
+
+.name-card-zone .name-card .face-zone p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.name-card-zone .name-card .info {
+  width: 50%;
+  padding-top: 5.5rem;
+  margin: 0;
+  padding-left: 0;
+}
+
+.name-card-zone .name-card .info li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 0.1rem;
+}
+
+.name-card-zone .name-card .info .offic-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.name-card-zone .name-card .info .office-address {
+  font-size: 12px;
+  color: #6c6c6c;
+}
+.name-card-zone .name-card .info .phone {
+  font-size: 12px;
+  padding-top: 1.5rem;
+}
+.name-card-zone .name-card .info .email {
+  font-size: 12px;
+}
+
+/*edit part*/
+.edit-zone {
+  width: 50%;
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+
+.edit-zone h3 {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.edit-zone input {
+  width: 350px;
+  height: 45px;
+  border: none;
+  border-radius: 0;
+  background: #f4f8fa;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+}
+
+/*footer*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #242930;
+  text-align: center;
+}
+
+.footer p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #e5e5e5;
+  opacity: 0.5;
+  padding-top: 1rem;
+}
+
+.footer li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #e5e5e5;
+  font-weight: 300;
+  padding-top: 0.3rem;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer li a {
+  color: #e5e5e5;
 }
