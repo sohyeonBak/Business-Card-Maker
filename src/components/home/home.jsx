@@ -12,9 +12,16 @@ const Home = props => {
 		phone_number : '010-1234-5678',
 		email : 'abcd12@ghi.com'
 	}]);
+
+	const createCard = (e)=>{
+		const create = [...cards,{cards}]
+		setCards(create)
+		console.log(e)
+	}
+
 	return(
 		<section className="home">
-			<Header />
+			<Header onAddCard={createCard}/>
 			<Cardzone cards={cards}/>
 			<Footer />
 		</section>

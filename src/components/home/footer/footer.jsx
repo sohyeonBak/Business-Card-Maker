@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
 
 const Footer = memo(()=>(
-	<footer>
-			<div className="footer">
+	<footer className="footer">
+			<div className="footer-zone">
 				<p>Sohyeon Bak</p>
 				<ul>
 					<li>Email : SohyeonBakoly@gmail.com</li>

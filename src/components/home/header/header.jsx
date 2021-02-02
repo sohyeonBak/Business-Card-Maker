@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-const Header = (props) => {
+const Header = ({onAddCard}) => {
 	const history = useHistory();
 
 	const onClick =()=> {
@@ -10,14 +10,17 @@ const Header = (props) => {
 		})
 	}
 
-	const onAddCard=(e)=>{
-		console.log(e)
+	const onAdd = ()=>{
+		onAddCard()
 	}
+	
 	return(
 		<header className="header">
+			<div className="header-zone">
 			<h1>Business Card Maker</h1>
 			<span className="sign-out" onClick={onClick}>Sing out</span>
-			<span className="add-card" onClick={onAddCard}>+ Add Card</span>
+			<span className="add-card" onClick={onAdd}>+ Add Card</span>
+			</div>
 		</header>	
 	)
 }

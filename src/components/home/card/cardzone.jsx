@@ -3,9 +3,12 @@ import Cardlist from './cardlist';
 
 const Cardzone = ({cards}) =>(
 	<section className="card-section">
-    <Cardlist cards={cards} />
+    <ul>
+      {cards.map(card => (
+        <Cardlist card={card} />
+      ))}
+    </ul>
   </section>
 )
-
 
 export default Cardzone;
