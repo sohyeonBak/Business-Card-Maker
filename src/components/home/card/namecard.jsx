@@ -1,21 +1,31 @@
 import React from 'react';
 
-const Namecard = ({card}) => (
+const Namecard = ({card,value}) => {
+	const {
+		name,
+		office,
+		address,
+		phone,
+		email
+	} = card;
+
+	return(
 	<div className="name-card-zone">
-			<h2>Card {card.id}</h2>
+			<h2>Card {value}</h2>
 			<div className="name-card">
 				<div class="face-zone">
 					<div className="face"></div>
-					<p>{card.name}</p>
+					<p>{name}</p>
 				</div>
 				<ul className="info">
-						<li class="offic-name">{card.office}</li>
-						<li class="office-address">{card.office_address}</li>
-						<li class="phone">{card.phone_number}</li>
-						<li class="email">{card.email}</li>
+						<li class="offic-name">{office}</li>
+						<li class="office-address">{address}</li>
+						<li class="phone">{phone}</li>
+						<li class="email">{email}</li>
 				</ul>
 			</div>
 		</div>
 )
+	}
 
 export default Namecard;

@@ -4,25 +4,43 @@ import Footer from './footer/footer';
 import Header from './header/header';
 
 const Home = props => {
-	const [cards, setCards] = useState([{
-		id : 1,
-		name : '박소현',
-		office : '가나다회사',
-		office_address : '서울시 강남구 A길 123-12',
-		phone_number : '010-1234-5678',
-		email : 'abcd12@ghi.com'
-	}]);
+	const [count, setCount] = useState(0)
+	const [cards, setCards] = useState({
+		'1':{
+			id : 1,
+			name : '박소현',
+			office : '가나다회사',
+			address : '서울시 강남구 A길 123-12',
+			phone : '010-1234-5678',
+			email : 'abcd12@ghi.com'
+		}
+	});
 
-	const createCard = (e)=>{
-		const create = [...cards,{cards}]
-		setCards(create)
-		console.log(e)
+	const addCard =(counts)=>{
+		console.log(counts)
+		setCount(counts)
+	}
+
+	const updateCard = (card) =>{
+		setCards(cards=>{
+			const update = {...cards}
+			update[card.id]=card
+			return update;
+			})
+		}
+
+	const deleteCard = card =>{
+		setCards(cards=>{
+			const update = {...cards};
+			delete update[card.id] 
+			return update;
+		})
 	}
 
 	return(
 		<section className="home">
-			<Header onAddCard={createCard}/>
-			<Cardzone cards={cards}/>
+			<Header count={count} onAdd={addCard} cards={cards}/>
+			<Cardzone count={count} cards={cards} updateCard={updateCard} deleteCard={deleteCard} />
 			<Footer />
 		</section>
 	)

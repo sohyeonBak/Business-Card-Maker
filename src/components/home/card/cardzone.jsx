@@ -1,12 +1,12 @@
 import React from 'react';
 import Cardlist from './cardlist';
 
-const Cardzone = ({cards}) =>(
+const Cardzone = ({cards, count, updateCard, deleteCard}) =>(
 	<section className="card-section">
     <ul>
-      {cards.map(card => (
-        <Cardlist card={card} />
-      ))}
+      {count > 0 ? Object.keys(cards).map(key => (
+        <Cardlist key={key} card={cards[key]} value={count} updateCard={updateCard} deleteCard={deleteCard} />
+      )) : '' } 
     </ul>
   </section>
 )
