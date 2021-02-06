@@ -196,6 +196,10 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.edit-default-zone .form .pick input {
+  display: none;
+}
+
 .edit-default-zone .form .pick button {
   width: 35%;
   height: 35px;
@@ -270,6 +274,10 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.edit-add-zone .form .pick input {
+  display: none;
+}
+
 .edit-add-zone .form .pick button {
   width: 35%;
   height: 35px;
@@ -327,6 +335,11 @@ a {
   background-color: rgb(88, 132, 252);
   margin-top: 1.5rem;
   margin-left: 2.3rem;
+}
+.name-card .face-zone .face img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
 }
 .name-card .face-zone p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,

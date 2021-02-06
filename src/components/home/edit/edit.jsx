@@ -2,12 +2,12 @@ import React from 'react';
 import EditAdd from './editadd';
 import EditDefault from './editdefault';
 
-const Edit = ({cards, updateCard, deleteCard, onAddCard}) => (
+const Edit = ({ImageUploader, cards, updateCard, deleteCard, onAddCard}) => (
     <div className="edit">
         {Object.keys(cards).map(key=>(
-            <EditDefault key={key} card={cards[key]} updateCard={updateCard} deleteCard={deleteCard} />
+            <EditDefault key={key} ImageUploader={ImageUploader} card={cards[key]} updateCard={updateCard} deleteCard={deleteCard} />
         ))}
-        <EditAdd onAdd={onAddCard}/>
+        <EditAdd ImageUploader={ImageUploader} onAdd={onAddCard}/>
     </div>
 );
 

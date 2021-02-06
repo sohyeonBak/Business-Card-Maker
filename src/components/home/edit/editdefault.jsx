@@ -1,14 +1,22 @@
 import React, { useRef } from 'react';
 import DeleteButton from '../button/deletebtn';
-import ImageAdd from '../imagefile.jsx/image-add';
 
-const EditDefault = ({card, updateCard, deleteCard}) => {
-    const { name, office, address, phone, email } = card;
+
+const EditDefault = ({ImageUploader, card, updateCard, deleteCard}) => {
+    const { name, office, address, phone, email, fileName } = card;
     const nameRef = useRef();
     const officeRef = useRef();
     const addressRef = useRef();
     const phoneRef = useRef();
     const emailRef = useRef();
+
+    const onFileChange = file =>{
+        updateCard({
+            ...card,
+            fileName : file.name,
+            fileURL : file.url
+        })
+    }
     
     const onChange = (e) => {
         e.preventDefault()
@@ -38,7 +46,7 @@ return(
                 <option value="">black</option>
                 <option value="">blue</option>
             </select>
-            <ImageAdd />
+            <ImageUploader name={fileName} onFileChange={onFileChange}/>
             <span className="delete-button">
                 <DeleteButton onClick={onSubmit}/>
             </span>

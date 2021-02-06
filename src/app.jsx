@@ -4,16 +4,16 @@ import Home from './components/home/home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
-function App({authService}) {
+function App({ImageUploader, authService}) {
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>
-            <Login authService={authService}/>
+            <Login authService={authService} />
           </Route>
           <Route path="/home">
-            <Home authService={authService}/>
+            <Home ImageUploader={ImageUploader} authService={authService} />
           </Route>
         </Switch>
       </BrowserRouter>

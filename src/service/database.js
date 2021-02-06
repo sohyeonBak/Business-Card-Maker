@@ -1,10 +1,9 @@
-import {database} from "./firebase";
-class DataBase {
-	const writeUserData =(id, name, office, office_address, phone_number, email)=>{
-		firebase.database().ref().set({
-		})
-	}
+import { firebaseDatabase } from "./firebase";
 
+class DataBase {
+	saveData(userId, card){
+		firebaseDatabase.database.ref(`${userId}/cards/${card.id}`).set(card)
+	}
 }
 
 export default DataBase;
