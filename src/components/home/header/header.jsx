@@ -1,8 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import AddButton from './addbutton';
 
-const Header = ({onAdd, cards, count}) => {
+
+const Header = () => {
 	const history = useHistory();
 
 	const onClick =()=> {
@@ -16,13 +16,8 @@ const Header = ({onAdd, cards, count}) => {
 	return(
 		<header className="header">
 			<div className="header-zone">
-			<h1>Business Card Maker</h1>
-			<span className="sign-out" onClick={onClick}>Sing out</span>
-			<span className="add-card" >
-			{Object.keys(cards).map(key => (
-				<AddButton value={count} onAdd={onAdd} key={key} card={cards[key]}/>
-			))}
-			</span>
+				<h1>Business Card Maker</h1>
+				<span className="sign-out" onClick={onClick}>Sing out</span>
 			</div>
 		</header>	
 	)

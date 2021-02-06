@@ -129,6 +129,7 @@ a {
 .header-zone .sign-out {
   color: #b5b5b5;
   margin-top: 2.5rem;
+  padding-right: 2rem;
 }
 
 .header-zone .sign-out:hover {
@@ -136,80 +137,190 @@ a {
   cursor: pointer;
 }
 
-.header-zone .add-card {
-  display: inline-block;
-}
-
-.header-zone .add-card button {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 195px;
-  height: 60px;
-  background-color: rgb(88, 132, 252);
-  color: #fff;
-  text-align: center;
-  line-height: 58px;
-  margin-left: 2rem;
-  margin-top: 1.2rem;
-  margin-right: 3rem;
-  border-radius: 10rem;
-  border: 0;
-  font-size: 24px;
-  font-weight: 100;
-}
-.header-zone .add-card button:focus {
-  outline: 0;
-}
-
-.header-zone .add-card button:hover {
-  cursor: pointer;
-}
-/*card section*/
-.card-section {
+/*content*/
+.content {
   flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.edit-default-zone {
   display: flex;
   justify-content: center;
+  width: 480px;
+  height: 330px;
+  background-color: #fff;
+  margin-top: 3rem;
+  margin-left: auto;
 }
 
-.card-section .card-zone {
-  width: 900px;
-  height: 500px;
-  background-color: #fff;
-  display: flex;
+.edit-default-zone .form {
+  display: inline-block;
+  width: 85%;
+}
+
+.edit-default-zone .form input:first-child {
   margin-top: 3rem;
 }
 
-/*namecard part*/
-.name-card-zone {
-  padding-left: 3rem;
-  width: 50%;
+.edit-default-zone .form input {
+  width: 100%;
+  height: 35px;
+  border: 0;
+  background: #f4f8fa;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0.6rem;
 }
 
-.name-card-zone h2 {
+.edit-default-zone .form .theme {
+  display: inline-block;
+  width: 35%;
+  height: 35px;
+  background: #242930;
+  margin-top: 0.6rem;
+  padding: 0.3rem;
+  border: 0;
+  text-align: left;
+  font-size: 16px;
+  color: #c4c4c4;
+  font-weight: 200;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(88, 132, 252);
-  padding-top: 4rem;
 }
 
-.name-card-zone .name-card {
+.edit-default-zone .form .pick button {
+  width: 35%;
+  height: 35px;
+  background: #242930;
+  border: 0;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  text-align: left;
+  font-size: 16px;
+  color: #c4c4c4;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.edit-default-zone .form .delete-button button {
+  width: 25%;
+  height: 35px;
+  background: #5884fc;
+  border-radius: 17.5px;
+  border: 0;
+  margin-left: 0.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+}
+
+/**/
+.edit-add-zone {
   display: flex;
   justify-content: center;
+  width: 480px;
+  height: 330px;
+  background-color: #c3c5c9;
+  margin-top: 3rem;
+  margin-left: auto;
+}
+
+.edit-add-zone .form {
+  display: inline-block;
+  width: 85%;
+}
+
+.edit-add-zone .form input:first-child {
+  margin-top: 3rem;
+}
+
+.edit-add-zone .form input {
+  width: 100%;
+  height: 35px;
+  border: 0;
+  background: #f4f8fa;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0.6rem;
+}
+
+.edit-add-zone .form .theme {
+  display: inline-block;
+  width: 35%;
+  height: 35px;
+  background: #242930;
+  margin-top: 0.6rem;
+  padding: 0.3rem;
+  border: 0;
+  text-align: left;
+  font-size: 16px;
+  color: #c4c4c4;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.edit-add-zone .form .pick button {
+  width: 35%;
+  height: 35px;
+  background: #242930;
+  border: 0;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  text-align: left;
+  font-size: 16px;
+  color: #c4c4c4;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.edit-add-zone .form .add-button button {
+  width: 25%;
+  height: 35px;
+  background: #fff;
+  border-radius: 17.5px;
+  border: 0;
+  margin-left: 0.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #242930;
+  font-weight: 200;
+}
+
+.card {
+  flex: 1;
+}
+.card .name-card:first-child {
+  margin-top: 7rem;
+}
+.card .name-card {
+  display: flex;
   width: 400px;
   height: 200px;
   background-color: #fff;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
   border-radius: 11px;
+  margin-left: 2rem;
+  margin-top: 11rem;
 }
 
-.name-card-zone .name-card .face-zone {
+.name-card .face-zone {
   flex-grow: 1;
   text-align: center;
 }
-
-.name-card-zone .name-card .face-zone .face {
+.name-card .face-zone .face {
   width: 125px;
   height: 125px;
   border-radius: 10rem;
@@ -217,8 +328,7 @@ a {
   margin-top: 1.5rem;
   margin-left: 2.3rem;
 }
-
-.name-card-zone .name-card .face-zone p {
+.name-card .face-zone p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
@@ -226,60 +336,31 @@ a {
   margin: 0;
   padding-top: 0.5rem;
 }
-
-.name-card-zone .name-card .info {
-  width: 50%;
+.name-card .info {
+  flex-grow: 1;
   padding-top: 5.5rem;
   margin: 0;
   padding-left: 0;
 }
-
-.name-card-zone .name-card .info li {
+.name-card .info li {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding-top: 0.1rem;
 }
-
-.name-card-zone .name-card .info .offic-name {
+.name-card .info .office-name {
   font-size: 14px;
   font-weight: bold;
 }
-.name-card-zone .name-card .info .office-address {
+.name-card .info .office-address {
   font-size: 12px;
   color: #6c6c6c;
 }
-.name-card-zone .name-card .info .phone {
+.name-card .info .phone {
   font-size: 12px;
   padding-top: 1.5rem;
 }
-.name-card-zone .name-card .info .email {
+.name-card .info .email {
   font-size: 12px;
-}
-
-/*edit part*/
-.edit-zone {
-  width: 50%;
-  padding-top: 1rem;
-  padding-left: 3rem;
-}
-
-.edit-zone h3 {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  margin-top: 1rem;
-}
-
-.edit-zone input {
-  width: 350px;
-  height: 45px;
-  border: none;
-  border-radius: 0;
-  background: #f4f8fa;
-  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 0.5rem;
 }
 
 /*footer*/
