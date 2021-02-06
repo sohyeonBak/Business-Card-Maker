@@ -1,8 +1,7 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { memo } from 'react';
 
 
-const Header = ({onLogOut}) => {
+const Header = memo(({onLogOut}) => {
 	
 	return(
 		<header className="header">
@@ -12,6 +11,6 @@ const Header = ({onLogOut}) => {
 			</div>
 		</header>	
 	)
-}
+})
 
 export default Header;

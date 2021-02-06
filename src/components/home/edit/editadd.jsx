@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React, { memo, useRef, useState } from 'react';
 import AddBtn from '../button/addbtn';
 
 
-const EditAdd = ({ImageUploader,onAdd}) => {
+const EditAdd = memo(({ImageUploader,onAdd}) => {
     const formRef = useRef();
     const nameRef = useRef();
     const officeRef = useRef();
@@ -55,5 +55,5 @@ const EditAdd = ({ImageUploader,onAdd}) => {
         </form>
     </div>
 );
-}
+})
 export default EditAdd;

@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 
-const ImageAdd = ({fileInput, onFileChange}) => {
+const ImageAdd = memo(({fileInput, onFileChange}) => {
     const imageRef= useRef();
     const onChangeImage =(e)=>{
         e.preventDefault()
@@ -22,6 +22,6 @@ const ImageAdd = ({fileInput, onFileChange}) => {
         <input ref={imageRef}type="file" accept="image/*" name="file" onChange={onChange}/>
         <button onClick={onChangeImage}>Pick image</button>
     </span>   
-);
-}
+)
+})
 export default ImageAdd;

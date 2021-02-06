@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const AddBtn = ({onClick}) => (
+const AddBtn = memo(({onClick}) => (
     <button onClick={onClick}>Add</button>     
-    );
+    ))
 
 export default AddBtn;
