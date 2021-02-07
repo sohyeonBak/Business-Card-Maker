@@ -9,6 +9,7 @@ const EditAdd = memo(({ImageUploader,onAdd}) => {
     const addressRef = useRef();
     const phoneRef = useRef();
     const emailRef = useRef();
+    const themeRef = useRef();
     const [file, setFile] = useState({fileName: null, fileURL: null});
 
     const onFileChange = file => {
@@ -27,6 +28,7 @@ const EditAdd = memo(({ImageUploader,onAdd}) => {
             address : addressRef.current.value||'',
             phone : phoneRef.current.value||'',
             email : emailRef.current.value||'',
+            theme: themeRef.current.value,
             fileName : file.name||'',
             fileURL : file.url||'',
         };
@@ -43,10 +45,10 @@ const EditAdd = memo(({ImageUploader,onAdd}) => {
             <input type="text" ref={addressRef} placeholder="Address"/>
             <input type="text" ref={phoneRef} placeholder="Phone"/>
             <input type="text" ref={emailRef} placeholder="Email"/>
-            <select name="" className="theme">
-                <option value="">white</option>
-                <option value="">black</option>
-                <option value="">blue</option>
+            <select name="theme" ref={themeRef} className="theme">
+                <option value="white">white</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
             </select>
             <ImageUploader name={file.fileName} onFileChange={onFileChange}/>
             <span className="add-button">

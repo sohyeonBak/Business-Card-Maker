@@ -16,6 +16,7 @@ const Home = ({ImageUploader }) => {
 			address : '서울시 강남구 A길 123-12',
 			phone : '010-1234-5678',
 			email : 'abcd12@ghi.com',
+			theme : 'white',
 			fielName : null,
 			fileURL : null
 		},
@@ -26,6 +27,7 @@ const Home = ({ImageUploader }) => {
 			address : '서울시 강서구 B길 587-12',
 			phone : '010-5678-1234',
 			email : 'aaccc8@iii.com',
+			theme : 'black',
 			fielName : null,
 			fileURL : null
 		}

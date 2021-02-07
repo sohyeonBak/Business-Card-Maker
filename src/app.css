@@ -215,6 +215,10 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.edit-default-zone .form .pick button:hover {
+  cursor: pointer;
+}
+
 .edit-default-zone .form .delete-button button {
   width: 25%;
   height: 35px;
@@ -227,6 +231,10 @@ a {
   font-size: 16px;
   color: #fff;
   font-weight: 200;
+}
+
+.edit-default-zone .form .delete-button button:hover {
+  cursor: pointer;
 }
 
 /**/
@@ -293,6 +301,10 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.edit-add-zone .form .pick button:hover {
+  cursor: pointer;
+}
+
 .edit-add-zone .form .add-button button {
   width: 25%;
   height: 35px;
@@ -307,73 +319,14 @@ a {
   font-weight: 200;
 }
 
-.card {
-  flex: 1;
-}
-.card .name-card:first-child {
-  margin-top: 7rem;
-}
-.card .name-card {
-  display: flex;
-  width: 400px;
-  height: 200px;
-  background-color: #fff;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 11px;
-  margin-left: 2rem;
-  margin-top: 11rem;
+.edit-add-zone .form .add-button button:hover {
+  background-color: #5884fc;
+  color: #fff;
+  cursor: pointer;
 }
 
-.name-card .face-zone {
-  flex-grow: 1;
-  text-align: center;
-}
-.name-card .face-zone .face {
-  width: 125px;
-  height: 125px;
-  border-radius: 10rem;
-  background-color: rgb(88, 132, 252);
-  margin-top: 1.5rem;
-  margin-left: 2.3rem;
-}
-.name-card .face-zone .face img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10rem;
-}
-.name-card .face-zone p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-  padding-top: 0.5rem;
-}
-.name-card .info {
-  flex-grow: 1;
-  padding-top: 5.5rem;
-  margin: 0;
-  padding-left: 0;
-}
-.name-card .info li {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-top: 0.1rem;
-}
-.name-card .info .office-name {
-  font-size: 14px;
-  font-weight: bold;
-}
-.name-card .info .office-address {
-  font-size: 12px;
-  color: #6c6c6c;
-}
-.name-card .info .phone {
-  font-size: 12px;
-  padding-top: 1.5rem;
-}
-.name-card .info .email {
-  font-size: 12px;
+.card {
+  flex: 1;
 }
 
 /*footer*/

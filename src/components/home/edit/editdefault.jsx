@@ -3,12 +3,13 @@ import DeleteButton from '../button/deletebtn';
 
 
 const EditDefault = ({ImageUploader, card, updateCard, deleteCard}) => {
-    const { name, office, address, phone, email, fileName } = card;
+    const { name, office, address, phone, email, theme, fileName } = card;
     const nameRef = useRef();
     const officeRef = useRef();
     const addressRef = useRef();
     const phoneRef = useRef();
     const emailRef = useRef();
+    const themeRef = useRef();
 
     const onFileChange = file =>{
         updateCard({
@@ -41,10 +42,10 @@ return(
             <input type="text" name="address" value={address} ref={addressRef} onChange={onChange} />
             <input type="text" name="phone" value={phone} ref={phoneRef} onChange={onChange} />
             <input type="text" name="email" value={email} ref={emailRef} onChange={onChange} />
-            <select name="" className="theme">
-                <option value="">white</option>
-                <option value="">black</option>
-                <option value="">blue</option>
+            <select name="theme" value={theme} ref={themeRef} onChange={onChange} className="theme">
+                <option value="white">white</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
             </select>
             <ImageUploader name={fileName} onFileChange={onFileChange}/>
             <span className="delete-button">
