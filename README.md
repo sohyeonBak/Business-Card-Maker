@@ -10,13 +10,22 @@
 ```
 
 ### Stack ⚒
-+ 
++ Create React App
++ React-hook
++ React-Router
++ firebase
++ cloudinary
++ postCSS
 
 ### Skill 🔍
-1. 
+1. React-router를 이용한 동적 페이지 생성, useHistory 사용
+2. React-hook api 적극적 사용
+3. Firebase의 authentication을 이용한 간단한 로그인
+4. Cloudinary로 사진 DB 저장
+5. postCSS를 활용한 모듈 CSS 적용
 
 ### Study 📌
-``
+`firebase를 이용한 간단한 로그인 이용하기`
 - Velog : <>
 
 ### 배포
