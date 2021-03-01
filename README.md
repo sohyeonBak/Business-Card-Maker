@@ -20,5 +20,5 @@
 - Velog : <>
 
 ### 배포
-`Github`
-- Github Link : <>
+`Netlify`
+- Netlify Link : <https://603cb28079b14ed1f7971778--business-card-by-sohyeon.netlify.app/>
