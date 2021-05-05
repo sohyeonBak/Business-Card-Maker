@@ -33,4 +33,4 @@ function getColor(theme){
             throw new Error(`unknown theme: ${theme}`);
     }
 }
-export default CardList;<div></div>
+export default CardList;
