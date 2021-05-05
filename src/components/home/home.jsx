@@ -41,7 +41,7 @@ const Home = ({ImageUploader }) => {
 		}
 	  }, [userId]);
 
-	const onClick =()=> {
+	const onLogOut =()=> {
 		history.push({
 			pathname : '/'
 		})
@@ -65,7 +65,7 @@ const Home = ({ImageUploader }) => {
 
 	return(
 		<section className="home">
-			<Header onLogOut={onClick}/>
+			<Header onClick={onLogOut}/>
 			<div className="content">
 				<Edit ImageUploader={ImageUploader} cards={cards} onAddCard={addUpdateCard} updateCard={addUpdateCard} deleteCard={deleteCard}/>
 				<Card cards={cards}/>

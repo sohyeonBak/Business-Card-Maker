@@ -6,12 +6,6 @@ class AuthService {
         return firebaseAuth.signInWithPopup(authProvider)
     }
 
-    onAuthChange(onUserChanged) {
-        firebaseAuth.onAuthStateChanged(user => {
-          onUserChanged(user);
-        });
-      }
-
     getProvider(providerName){
         switch(providerName){
             case 'Google':
