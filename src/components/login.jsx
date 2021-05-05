@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const Login = ({authService}) => {
@@ -18,10 +18,6 @@ const Login = ({authService}) => {
 			.then(data => goToMaker(data.user.id))
 	}
 
-	useEffect(() => {
-	    authService.onAuthChange(user => {
-	        user && goToMaker(user.id);})
-	})   
 
 	return (
 		<div className="login-zone">
