@@ -30,4 +30,4 @@
 
 ### 배포
 `Netlify`
-- Netlify Link : <https://603cb28079b14ed1f7971778--business-card-by-sohyeon.netlify.app/>
+- Netlify Link : <https://makeyourbusinesscard.netlify.app>
