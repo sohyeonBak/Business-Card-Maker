@@ -6,8 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App({ImageUploader, authService}) {
   return (
-    <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact>
             <Login authService={authService} />
@@ -17,7 +16,6 @@ function App({ImageUploader, authService}) {
           </Route>
         </Switch>
       </BrowserRouter>
-    </div>
     
   );
 }

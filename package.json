@@ -1,7 +1,8 @@
 {
-  "name": "test",
+  "name": "templete",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sohyeonbak.github.io/Business-Card-Maker",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@testing-library/jest-dom": "^5.11.4",
@@ -10,24 +11,24 @@
     "cloudinary-core": "^2.11.3",
     "firebase": "^8.2.4",
     "firebaseui": "^4.7.1",
+    "gh-pages": "^3.1.0",
     "material-design-icons": "^3.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "templete": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
