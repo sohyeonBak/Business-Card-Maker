@@ -25,8 +25,8 @@
 5. postCSS를 활용한 모듈 CSS 적용
 
 ### Study 📌
-`firebase를 이용한 간단한 로그인 이용하기`
-- Velog : <>
+`프로젝트 리뷰`
+- Velog : <https://velog.io/@sohyeonbak_oly/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EC%B9%B4%EB%93%9C-%EB%A9%94%EC%9D%B4%EC%BB%A4-%EB%AA%85%ED%95%A8-%EB%A7%8C%EB%93%A4%EA%B8%B0>
 
 ### 배포
 `Netlify`
